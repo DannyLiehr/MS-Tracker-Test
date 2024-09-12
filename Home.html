@@ -9,6 +9,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="30" />
     <title>Mail Shark Job Tracker</title>
 
     <script src="Scripts/MessageBanner.js" 
@@ -27,8 +28,9 @@
 </head>
 
 <body class="ms-font-m ms-welcome ms-Fabric ms-bgColor-neutralLighter">
-    
+    <div id="creditBanner"><button id="credits">About this Addin</button></div>
     <header class="ms-welcome__header ms-bgColor-neutralLighter">
+        
         <img width="90" height="90" src="../Images/logo-filled.png" alt="Mail Shark Job Tracker" title="Mail Shark Job Tracker"/>
         <h1 class="ms-font-su ms-fontColor-themePrimary" id="type">Print Jobs</h1>
     </header>
@@ -54,14 +56,18 @@
             <p class="ms-font-l"><span class="ms-fontColor-orangeLight">Oh No!</span> This document does not appear to contain breakout sheets.</p>
             <button class="ms-font-l ms-bgColor-orangeLight ms-fontColor-neutralLighterAlt" onClick="window.location.reload();">Refresh Page</button>
         </div>
-        <div id="jobCount"><h4>Test</h4></div>
+        <div id="jobCount"><h4>Hold tight-- We're loading your jobs.</h4></div>
         <div id="jobsPage">
             
         </div>
-        <details class="completedcollapse">
-            <summary>Completed Jobs: <span id="completedCount">0</span></summary>
-            <div id="completedJobs"></div>
-        </details>
+
+        <div class="completedcollapse">
+            <details>
+                <summary>Completed Jobs: <span id="completedCount">0</span></summary>
+                <div id="completedJobs"></div>
+            </details>
+        </div>
+        
 
         <p><label id="item-subject"></label></p>
         

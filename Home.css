@@ -117,12 +117,11 @@ button{
     display: block;
 }
 
-#credits {
-    position: absolute;
-    bottom: 8px;
+#creditBanner {
     margin: auto;
-    width: 100%;
     text-align: center;
+    /* background: yellow; */
+    width:100%;
 }
 
 .card{
@@ -135,9 +134,9 @@ button{
     /* color: red; */
     visibility: hidden;
 }
-#jobsPage .card:not(:first-child) {
+/* #jobsPage .card:not(:first-child) {
     display: none;
-  }
+  } */
    
 .splash-text{
     color: darkgreen;
@@ -155,4 +154,14 @@ button{
     to {
       opacity: 0;
     }
+  }
+
+  details{
+    width:100%;
+  }
+  summary, details {
+    cursor: pointer;
+  }
+  p, h1, h2, h3, h4 {
+    cursor: default;
   }
